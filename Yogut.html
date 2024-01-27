@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogut selling 🥤</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        color: #fff;
+        width: 50%;
+        margin: 60px auto;
+        font-family: "Cerebri Sans", Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I love Yogurt</h1>
+    <h2>Especially Home Made Yogurt</h2>
+    <img
+      src="https://www.allrecipes.com/thmb/bRg6T06M92G2smbIuaiGsVc4U2s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1028395-authentic-homemade-yogurt-MTRmenian-4x3-1-0c66078e9bd64cada5606bf2d85db601.jpg"
+      alt="Home Made Yogurt"
+      width="200"
+    />
+    <p>
+      Yogurt is a food produced by bacterial fermentation of milk. The bacteria
+      used to make yogurt are known as yogurt cultures. Fermentation of sugars
+      in the milk by these bacteria produces lactic acid, which acts on milk
+      protein to give yogurt its texture and characteristic tart flavor.
+    </p>
+    <a
+      href="https://www.healthline.com/nutrition/benefits-of-yogurt"
+      target="_blank"
+      class="learn-more"
+    >
+      Learn more on healthline
+    </a>
+    <button class="buy-button">👉 Buy Home made Yogurt</button>
+    <p class="footer">
+      This page was built by
+      <a
+        href="https://www.linkedin.com/in/siphesihle-sephaka-407a71244/?locale=ms_MY"
+        target="_blank"
+      >
+        Siphesihle Sephaka
+      </a>
+    </p>
+
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you" +
+            name +
+            "! We'll be in touch by email, meanwhile have lot of Yogurt!" +
+            emoji
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
